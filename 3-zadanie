@@ -1,1 +1,7 @@
-print("Hello world")
+import json
+
+text = open('structure.json')
+data = json.load(text)
+for item in data.items():
+    print(item)
+text.close()
